@@ -19,8 +19,7 @@
 
         <div class="container-fluid">
             <h1><a class="navbar-brand text-light" href="index.html">ZariTech Solution</a></h1>
-
-            <button class="btn btn-warning" style="float: inline-end;">
+            <button class="btn btn-info" style="float: inline-end;">
 
                 <h8 class="text-dark" href="index.html">PROMO: 10% OFF for Gadgets</h8>
 
@@ -32,38 +31,33 @@
 
     <main class="container-fluid">
 
-        <div class="container bg-warning text-center mt-5 p-5">
+        <div class="container bg-info text-center mt-5 p-5">
             <h4>Want a Gaming Laptop?</h4><br>
             <p class="text-muted">Enter your budget and we'll find one for you!</p><br>
 
             <input type="number" id="budget" class="form-control" placeholder="Enter your budget (E.g. 70000)">
             <br><br>
             
-            <button class="btn btn-dark" onclick="discount()">Brand & Discount</button>&emsp;
-            <button class="btn btn-dark">Store Locations</button>&emsp;
-            <button class="btn btn-dark" onclick="window.location.reload()">Refresh</button>&emsp;
+            <button type="button" class="btn btn-dark" onclick="discount()">Brand & Discount</button>&emsp;
+            
+            <button type="button" class="btn btn-dark" onclick="store()">Store Locations</button>&emsp;
+
+            <button type="button" class="btn btn-dark" onclick="window.location.reload()">Refresh</button>&emsp;
             <br>
 
-        </div> 
-
-        <div class="container bg-secondary text-light text-center mt-3 p-5">
-            <h4>Recommended Brands: </h4><br>
-            
-            <button class="btn btn-warning">Acer</button>
-            <button class="btn btn-warning">Lenovo</button>
-            <button class="btn btn-warning">ASUS</button>
-            <br><br> 
-
-            <p>Eligible Discount:<span class="bg-primary" id="discPrice"></span></p>
         </div>
-        <br><br>
+
+        <div id="disc-area"></div><br>
+        <div id="store-area"></div><br>
 
 
     </main>
+    <br><br>
 
     <footer class="text-center bg-dark text-light footer py-3 fixed-bottom">&copy; 2026 ZariTech Solution. All rights reserved.</footer>
 
-    <script>src="main.js"</script>
+    <script src="main.js"></script>
+   
 
 </body>
 
